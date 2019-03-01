@@ -6,6 +6,9 @@ def oxford_comma(array)
     array.each_with_index do |element, index|
       if index == 0
         array_string << element
+        if array.size == 2 
+          array_string << ","
+        end
       elsif index == array.size - 1
         array_string << " and #{element}"
       else
