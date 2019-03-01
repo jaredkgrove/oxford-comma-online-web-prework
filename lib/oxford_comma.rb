@@ -12,7 +12,7 @@ def oxford_comma(array)
       elsif index == array.size - 1
         array_string << " and #{element}"
       else
-        array_string << ", #{element}"
+        array_string << " #{element},"
       end 
     end
   end
